@@ -1,6 +1,10 @@
-import Greet from "./components/greet";
+import Greet from "./components/Greet";
+import Navbar from "./components/Navbar";
 
 const App = ()=>{
-  return <Greet></Greet>
+  return <div>
+      <Greet></Greet>
+      <Navbar></Navbar>
+    </div>;
 };
 export default App;
