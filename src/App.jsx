@@ -1,4 +1,6 @@
+import Greet from "./components/greet";
+
 const App = ()=>{
-  return <div>Hi,Aman</div>
+  return <Greet></Greet>
 };
 export default App;
