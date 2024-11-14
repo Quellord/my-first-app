@@ -5,10 +5,11 @@
 // 3.adding new css file and importing it
 // import "./index.css";
 
-import NavBar from "./components/NavBar";
+import Navigation from "./components/Navigation";
+
 
 
 const App = ()=>{
-  return <NavBar/>
+  return <Navigation/>
 };
 export default App;
