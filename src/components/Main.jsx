@@ -1,9 +1,12 @@
-import React from 'react'
+const items =["apple","banana","mango","fig"]
 
-const Main = () => {
+const Main = (props) => {
   return (
-    <div><h3>Main content</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae excepturi cum ipsum. Non debitis, repellendus animi ea sequi ad corporis.</p>
+    <div className="main">
+     { props.children}
+     {items.map =(item)
+     }
+      
     </div>
   )
 }

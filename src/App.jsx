@@ -5,10 +5,10 @@ import Footer from "./components/Footer"
 
 const App = ()=>{
   return <section>
-      <Navbar></Navbar>
-      <Greet></Greet>
-      <Main></Main>
-      <Footer></Footer>
+      <Navbar/>
+      <Greet/>
+      <Main> <h2>Cart 🛒</h2></Main>
+      <Footer/>
     </section>;
 };
 export default App;
