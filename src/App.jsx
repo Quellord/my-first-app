@@ -4,7 +4,6 @@
 // 2.using another map list as style
 // 3.adding new css file and importing it
 // import "./index.css";
-
 import Navigation from "./components/Navigation";
 
 

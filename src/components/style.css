@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    margin:1em;
+    color:white;
+}
+a:hover{
+    color:aqua;
+}
+.Active{
+    color:grey;
+}
