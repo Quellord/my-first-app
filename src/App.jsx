@@ -4,11 +4,13 @@
 // 2.using another map list as style
 // 3.adding new css file and importing it
 // import "./index.css";
-import Navigation from "./components/Navigation";
 
-
+//Default React Template
+import "./App.css"
 
 const App = ()=>{
-  return <Navigation/>
+  return <>
+
+  </>
 };
 export default App;
