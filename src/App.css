@@ -3,8 +3,12 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+li{
+    listStyle:"none";
+    display:flex;
+    flex-direction:column;
+}
 a{
-    margin:1em;
     color:white;
 }
 a:hover{
