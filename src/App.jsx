@@ -1,10 +1,10 @@
 
-import Counter from "./components/Counter";
 import "./App.css"
+import ToDo from "./components/ToDo";
 
 const App = ()=>{
   return <>
-    <Counter/>
+  <ToDo/>
   </>
 };
 export default App;
