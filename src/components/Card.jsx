@@ -1,13 +1,10 @@
-import { useEffect } from "react"
 
-const Card = () => {
-    //for every rendering  pass nothing
-    useEffect(()=>{
-        console.log("hello");
-    },[])
-  return (
-    <div></div>
-  )
+const Card = ({id,title,status}) => {
+   
+  return <>
+    <h2>{id}</h2>
+   <p className={status?"strikeThrough":""}>{title}</p>
+  </>
 }
 
 export default Card

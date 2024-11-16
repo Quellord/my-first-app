@@ -1,29 +1,25 @@
 import Card from "./components/Card";
-import { useState,useRef } from "react";
+import { useState } from "react";
 import "./App.css"
-let duck = 100;
 const App = ()=>{ 
-  const [count, setCount] = useState(0);
- let fuck = useRef(2);
-  const UpdateC = ()=>{
-    console.log(fuck.current);
-    fuck.current ++;
-    duck++;
-    console.log(duck)
-    //yaha pe fuck variable badal raha hai but jab count ko render kiya jaata hai tab app component pura render hota hai so fuck become s 2 again
-    //for this we have use ref
+  const [data, setdata] = useState([])
+  async function fetchData(){
+    try{
+      const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${Math.floor(Math.random()*20)+1}`);
+      if(!response.ok){
+        throw new Error('Failed to fetch data');
+      }
+      const newdata = await response.json();
+      setdata(newdata);
+      
+    }catch(error){
+      console.error(error);
+    }
     
-
-    // ab muje ye doubt hai ki global var bhi useref jesa hi kaam karta hai toh global kyu use nhi karte
-    //doubt clear because global me hum uncreate or rendered element ka name store nhi kar sakte 
-    //use ref document .get eleme t ka alternatuve hota hai
-    
-    setCount(count+1);
   }
   return <>
-    <Card />
-    <h2>{count}</h2>
-    <button onClick={UpdateC}>Load</button>
+    <Card id ={data.id} title={data.title} status ={data.completed}/>  
+    <button onClick={fetchData}>Load</button>
   </>
 };
 export default App;
